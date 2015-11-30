@@ -1,0 +1,55 @@
+Ais\DaftarBundle\Entity\Daftar:
+ type: entity
+ table: daftar
+ id:
+  id: 
+   type: integer
+   generator: { strategy: AUTO }
+ fields:
+  no_daftar:
+   type: string
+   length: 10
+   unique: true
+  nama:
+   type: string
+  nama_singkat:
+   type: string
+   length: 30
+   nullable: true
+  email:
+   type: string
+   length: 100
+   nullable: true
+  phone:
+   type: string
+   length: 20
+   nullable: true
+  gender:
+   type: string
+   length: 50
+  tempat_lahir:
+   type: string
+  tanggal_lahir:
+   type: date
+  agama:
+   type: string
+   length: 100
+  is_delete:
+   type: boolean
+   nullable: true
+  provinsi_id:
+   type: integer
+  kabupaten_id:
+   type: integer
+  kecamatan:
+   type: string
+  alamat:
+   type: string
+  pos:
+   type: string
+  asal_sekolah:
+   type: string
+  jumlah_un:
+   type: string
+  jurusan_sekolah:
+   type: string

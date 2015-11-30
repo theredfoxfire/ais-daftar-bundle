@@ -1,0 +1,18 @@
+{% block content %}
+    <h1 class="title">{{ 'daftar.list'|trans({}, 'AisDaftarBundle') }}</h1>
+
+    <ul id="daftar-list">
+        {% for daftar in daftars %}
+            <li>
+                <a href="{{ path('api_1_get_daftar', {'id': daftar.id}) }}">{{ daftar.nama }}</a>
+                {#[<a href="{{ path('api_1_edit_daftars', {'id': daftar.id}) }}">{{ 'daftar.edit.link'|trans({}, 'AisDaftarBundle') }}</a>]#}
+                {#[<a href="{{ path('api_1_remove_daftars', {'id': daftar.id}) }}">{{ 'daftar.remove.link'|trans({}, 'AisDaftarBundle') }}</a>]#}
+            </li>
+        {% else %}
+            <li>{{ 'daftar.list.empty'|trans({}, 'AisDaftarBundle') }}</li>
+        {% endfor %}
+    </ul>
+    <p>
+        <a href="{{ path('api_1_new_daftar') }}">{{ 'daftar.new.link'|trans({}, 'AisDaftarBundle') }}</a>
+    </p>
+{% endblock %}
