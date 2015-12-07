@@ -546,5 +546,33 @@ class Daftar implements DaftarInterface
     {
         return $this->jurusan_sekolah;
     }
-}
+    /**
+     * @var string
+     */
+    private $nationality;
 
+
+    /**
+     * Set nationality
+     *
+     * @param string $nationality
+     *
+     * @return Daftar
+     */
+    public function setNationality($nationality)
+    {
+        $this->nationality = $nationality;
+
+        return $this;
+    }
+
+    /**
+     * Get nationality
+     *
+     * @return string
+     */
+    public function getNationality()
+    {
+        return $this->nationality;
+    }
+}

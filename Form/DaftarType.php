@@ -24,6 +24,7 @@ class DaftarType extends AbstractType
             ->add('tempat_lahir')
             ->add('tanggal_lahir')
             ->add('agama')
+            ->add('nationality')
             ->add('is_delete')
             ->add('provinsi_id')
             ->add('kabupaten_id')

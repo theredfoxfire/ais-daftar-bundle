@@ -298,4 +298,20 @@ Interface DaftarInterface
      * @return string
      */
     public function getJurusanSekolah();
+    
+        /**
+     * Set nationality
+     *
+     * @param string $nationality
+     *
+     * @return Daftar
+     */
+    public function setNationality($nationality);
+
+    /**
+     * Get nationality
+     *
+     * @return string
+     */
+    public function getNationality();
 }
