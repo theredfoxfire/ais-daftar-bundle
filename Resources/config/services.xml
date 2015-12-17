@@ -16,6 +16,16 @@
             <argument>%ais_daftar.daftar.class%</argument>
             <argument type="service" id="form.factory"></argument>
         </service>
+        
+        <service id="ais_daftar.daftar.manager" class="Doctrine\ORM\EntityManager" factory-service="doctrine" factory-method="getManagerForClass">
+			<argument>%ais_daftar.daftar.class%</argument>
+		</service>
+        
+        <service id="ais_daftar.daftar.repository" 
+			class="Ais\UserBundle\Repository\DaftarRepository"
+			factory-service="ais_user.daftar.manager" factory-method="getRepository">
+				<argument>%ais_daftar.daftar.class%</argument>
+		</service>
     </services>
 
 </container>

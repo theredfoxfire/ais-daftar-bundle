@@ -1,6 +1,7 @@
 Ais\DaftarBundle\Entity\Daftar:
  type: entity
  table: daftar
+ repositoryClass: Ais\DaftarBundle\Repository\DaftarRepository
  id:
   id: 
    type: integer
@@ -51,6 +52,8 @@ Ais\DaftarBundle\Entity\Daftar:
   pos:
    type: string
   asal_sekolah:
+   type: string
+  no_ijasah:
    type: string
   jumlah_un:
    type: string

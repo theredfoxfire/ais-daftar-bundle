@@ -575,4 +575,33 @@ class Daftar implements DaftarInterface
     {
         return $this->nationality;
     }
+    /**
+     * @var string
+     */
+    private $no_ijasah;
+
+
+    /**
+     * Set noIjasah
+     *
+     * @param string $noIjasah
+     *
+     * @return Daftar
+     */
+    public function setNoIjasah($noIjasah)
+    {
+        $this->no_ijasah = $noIjasah;
+
+        return $this;
+    }
+
+    /**
+     * Get noIjasah
+     *
+     * @return string
+     */
+    public function getNoIjasah()
+    {
+        return $this->no_ijasah;
+    }
 }
