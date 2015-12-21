@@ -47,7 +47,7 @@
     },
     "autoload" : {
         "psr-0" : {
-            "Ais\\DaftarBundle" : ""
+            "Ais\\DaftarBundle" : "src/"
         }
     },
     "target-dir" : "Ais/DaftarBundle",
