@@ -15,7 +15,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/theredfoxfire/ais-daftar-bundle"
+            "url": "https://github.com/theredfoxfire/ais-daftar-bundle.git"
         }
     ],
     "require": {
@@ -29,7 +29,7 @@
         "sensio/distribution-bundle": "~4.0",
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
-	"ircmaxell/password-compat"            : "~1.0",
+		"ircmaxell/password-compat"            : "~1.0",
         "leafo/scssphp"                        : "~0.1.5",
         "patchwork/jsqueeze"                   : "~1.0",
         "friendsofsymfony/rest-bundle": "@dev",
@@ -55,7 +55,7 @@
     }],
     "extra" : {
     "branch-alias" : {
-            "dev-master" : "0.0.1-dev"
+            "dev-master" : "0.0.1"
         }
     }
 }
