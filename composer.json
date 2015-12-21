@@ -1,5 +1,5 @@
 {
-    "name" : "Ais/DaftarBundle",
+    "name" : "ais/daftarbundle",
     "description" : "A bundle filled with Daftar",
     "type" : "symfony-bundle",
     "authors" : [{
@@ -11,6 +11,12 @@
     ],
     "license" : [
         "MIT"
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/theredfoxfire/ais-daftar-bundle"
+        }
     ],
     "require": {
         "php": ">=5.3.9",

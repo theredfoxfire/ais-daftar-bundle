@@ -22,8 +22,8 @@
 		</service>
         
         <service id="ais_daftar.daftar.repository" 
-			class="Ais\UserBundle\Repository\DaftarRepository"
-			factory-service="ais_user.daftar.manager" factory-method="getRepository">
+			class="Ais\DaftarBundle\Repository\DaftarRepository"
+			factory-service="ais_daftar.daftar.manager" factory-method="getRepository">
 				<argument>%ais_daftar.daftar.class%</argument>
 		</service>
     </services>
