@@ -38,7 +38,7 @@ class AppKernel extends Kernel
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
             new Ais\DaftarBundle\AisDaftarBundle(),
         );
-	...
+        ...
 
         return $bundles;
     }
