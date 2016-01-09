@@ -12,11 +12,15 @@ Add the following inside require tag in your root composer.json file:
     },
 }
 ```
-Run $ php composer.phar update, wait until update finished.
-
+Run, wait until update finished.
+```
+php composer.phar update
+```
 Registering the bundle into your AppKernel.php 
-Once composer update finished. If not yet install NelmioApiDocBundle you need registering it too. Because this bundle require
-NelmioApiDocBundle to see the API doc.
+
+Once the composer update is finished. If you not yet install NelmioApiDocBundle before, you need registering it too. 
+
+Because this bundle require NelmioApiDocBundle to see the API doc.
 
 ```php
 <?php
@@ -32,22 +36,11 @@ class AppKernel extends Kernel
         $bundles = array(
         ...
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
-			      new Ais\DaftarBundle\AisDaftarBundle(),
+	    new Ais\DaftarBundle\AisDaftarBundle(),
         );
-
-        if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
-            $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
-            $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
-            $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
-            $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
-        }
+	...
 
         return $bundles;
-    }
-
-    public function registerContainerConfiguration(LoaderInterface $loader)
-    {
-        $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
     }
 }
 ```
@@ -67,6 +60,8 @@ Import the route to your routing.yml
 
 ## See what in the inside
 Now you may see the available API by access your url dev
-ex: http://localhost/web/app_dev.php/api/doc
 
+```
+ex: http://localhost/web/app_dev.php/api/doc
+```
 Find a typo? just ask me for PR. If you find some error please help me to fix it by email me to vizzlearn@gmail.com
