@@ -12,7 +12,7 @@ Add the following inside require tag in your root composer.json file:
     },
 }
 ```
-Run, wait until update finished.
+Run, and wait until update finished.
 ```
 php composer.phar update
 ```
@@ -36,7 +36,7 @@ class AppKernel extends Kernel
         $bundles = array(
         ...
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
-	    new Ais\DaftarBundle\AisDaftarBundle(),
+            new Ais\DaftarBundle\AisDaftarBundle(),
         );
 	...
 
