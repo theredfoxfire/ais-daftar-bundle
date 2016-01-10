@@ -1,7 +1,17 @@
 # ais-daftar-bundle
-Daftar Bundle For AIS
+Daftar Bundle For AIS. I use Symfony 2.7.4 in my kit. In case if you want to install Symfony follow the URL below:
+
+```
+http://symfony.com/doc/2.7/book/installation.html
+```
 
 ## Usage
+
+I assume you already have composer on your dev environment. If not, please visit this URL:
+
+```
+https://getcomposer.org/doc/00-intro.md
+```
 
 Add the following inside require tag in your root composer.json file:
 
@@ -12,7 +22,7 @@ Add the following inside require tag in your root composer.json file:
     },
 }
 ```
-Run, and wait until update finished.
+Run, and wait until composer update is finished.
 ```
 php composer.phar update
 ```
@@ -20,7 +30,7 @@ Registering the bundle into your AppKernel.php
 
 Once the composer update is finished. If you not yet install NelmioApiDocBundle before, you need registering it too. 
 
-Because this bundle require NelmioApiDocBundle to see the API doc.
+Because this bundle require NelmioApiDocBundle to see the API doc. I also use JMS Serializer and FOSRestBundle.
 
 ```php
 <?php
@@ -36,6 +46,8 @@ class AppKernel extends Kernel
         $bundles = array(
         ...
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
             new Ais\DaftarBundle\AisDaftarBundle(),
         );
         ...
