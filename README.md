@@ -21,7 +21,7 @@ Add the following inside require tag in your root composer.json file:
     },
 }
 ```
-Run, and wait until composer update is finished.
+Run composer update, and wait until composer update is finished.
 ```
 php composer.phar update
 ```
