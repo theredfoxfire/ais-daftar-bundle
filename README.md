@@ -56,7 +56,7 @@ class AppKernel extends Kernel
 }
 ```
 
-Import the route to your routing.yml
+Import the route to your app/config/routing.yml
 
 ```yaml
   ais_daftars:
