@@ -1,17 +1,16 @@
 # ais-daftar-bundle
 Daftar Bundle For AIS. I use Symfony 2.7.4 in my kit. In case if you want to install Symfony follow the URL below:
 
-```
-(http://symfony.com/doc/2.7/book/installation.html)
-```
+[Symfony 2.7](http://symfony.com/doc/2.7/book/installation.html)
+
 
 ## Usage
 
 I assume you already have composer on your dev environment. If not, please visit this URL:
 
-```
-(https://getcomposer.org/doc/00-intro.md)
-```
+
+[Getting started with Composer](https://getcomposer.org/doc/00-intro.md)
+
 
 Add the following inside require tag in your root composer.json file:
 
